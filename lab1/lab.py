@@ -12,6 +12,9 @@ def main():
     except (IOError, OSError):
         logging.error("file close")
     else:
+        logging.info("arr1:\t\tarr2:")
+        for index, item in enumerate(arr2):
+            logging.info("%s\t\t%s", arr1[index], item)
 
 
 if __name__ == "__main__":
