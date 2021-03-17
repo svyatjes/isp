@@ -6,9 +6,11 @@ logging.basicConfig(level=logging.INFO, format=False)
 
 def main():
     try:
-
-    except ():
-
+        with open("arr.txt") as input_file:
+            arr1 = input_file.readline().split()
+            arr2 = input_file.readline().split()
+    except (IOError, OSError):
+        logging.error("file close")
     else:
 
 
